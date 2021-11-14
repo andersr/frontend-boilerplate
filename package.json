@@ -8,7 +8,7 @@
     "lint:ts": "eslint \"./src/**/*.{js,ts,tsx}\"",
     "test:unit": "jest",
     "prepare": "husky install",
-    "allchecks": "npm-run-all test:unit lint:ts"
+    "allchecks": "npm-run-all lint:ts test:unit"
   },
   "dependencies": {
     "react": "^17.0.2",
