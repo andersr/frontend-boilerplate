@@ -20,7 +20,8 @@ plugins:
   - 'prettier'
   - '@typescript-eslint'
 rules: {
-  "jest/consistent-test-it": "error",
-   "no-use-before-define": "off",
-   "@typescript-eslint/no-use-before-define": ["error"]
+  'no-console': ['error', { allow: ['warn', 'error']}],
+  'jest/consistent-test-it': 'error',
+   'no-use-before-define': 'off',
+   '@typescript-eslint/no-use-before-define': ['error']
 }
