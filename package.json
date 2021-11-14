@@ -13,7 +13,7 @@
     "test:unit": "jest",
     "ts:check": "tsc --noEmit",
     "prepare": "husky install",
-    "allchecks": "npm-run-all ts:check lint:ts test:unit"
+    "allchecks": "npm-run-all ts:check lint:ts lint:css test:unit"
   },
   "dependencies": {
     "history": "5",
