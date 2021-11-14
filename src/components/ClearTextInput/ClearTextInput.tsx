@@ -8,4 +8,4 @@ const Container = styled.div`
 
 export const ClearTextInput: React.FC = () => (
     <Container>Clear Text</Container>
-  )
+)
