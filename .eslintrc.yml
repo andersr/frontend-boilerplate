@@ -16,9 +16,11 @@ settings:
     version: detect
 plugins:
   - react
+  - jest
   - 'prettier'
   - '@typescript-eslint'
 rules: {
+  "jest/consistent-test-it": "error",
    "no-use-before-define": "off",
    "@typescript-eslint/no-use-before-define": ["error"]
 }
