@@ -8,6 +8,7 @@
     "build:serve": "serve dist",
     "dev": "webpack serve --config './webpack/webpack.dev.ts'",
     "lint:css": "stylelint \"./src/**/*.css\" --fix",
+    "lint:styled": "stylelint \"./src/**/*.tsx\" --config ./.stylelintrc_styled --fix",
     "lint:ts": "eslint \"./src/**/*.{js,ts,tsx}\" --fix",
     "test:unit": "jest",
     "ts:check": "tsc --noEmit",
