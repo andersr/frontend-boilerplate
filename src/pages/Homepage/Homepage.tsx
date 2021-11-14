@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ClearTextInput } from '../../components'
+import { SamplePngFile } from '../../assets/images'
 export const HOMEPAGE_TEST_ID = 'homepage'
 
 export function Homepage () {
@@ -10,6 +11,7 @@ export function Homepage () {
                 <Link to="/about">About Us</Link>
             </div>
             <ClearTextInput />
+            <img src={SamplePngFile} alt="Sample Image" />
         </div>
     )
 }
