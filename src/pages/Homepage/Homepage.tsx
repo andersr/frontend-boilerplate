@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { ClearTextInput } from '../../components';
 export const HOMEPAGE_TEST_ID = 'homepage'
 
 export function Homepage () {
@@ -8,6 +9,7 @@ export function Homepage () {
     <div>
     <Link to="/about">About Us</Link>
     </div>
+    <ClearTextInput />
     </div>
   )
 }

@@ -23,5 +23,8 @@ rules: {
   'no-console': ['error', { allow: ['warn', 'error']}],
   'jest/consistent-test-it': 'error',
    'no-use-before-define': 'off',
-   '@typescript-eslint/no-use-before-define': ['error']
+   '@typescript-eslint/no-use-before-define': ['error'],
+    // note you must disable the base rule as it can report incorrect errors
+   "indent": "off",
+  "@typescript-eslint/indent": ["error"]
 }
