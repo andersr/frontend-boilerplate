@@ -14,8 +14,7 @@ const config = merge(common as DevConfig, {
         historyApiFallback: true,
         proxy: {
             '/api': API_HOST
-        },
-        open: true
+        }
     }
 })
 
