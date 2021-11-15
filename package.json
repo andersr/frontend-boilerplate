@@ -6,11 +6,13 @@
   "scripts": {
     "build": "rm -rf ./dist && webpack --config ./webpack/webpack.prod.ts",
     "build:serve": "serve dist",
-    "dev": "webpack serve --config './webpack/webpack.dev.ts'",
+    "dev": "concurrently \"yarn test:unit:watch\" \"yarn dev:server\"",
+    "dev:server": "yarn && webpack serve --config './webpack/webpack.dev.ts'",
     "lint:css": "stylelint \"./src/**/*.css\"",
     "lint:styled": "stylelint \"./src/**/*.tsx\" --config ./.stylelintrc_styled",
     "lint:ts": "eslint \"./src/**/*.{js,ts,tsx}\"",
     "test:unit": "jest",
+    "test:unit:watch": "jest --watch",
     "ts:check": "tsc --noEmit",
     "prepare": "husky install",
     "allchecks": "npm-run-all ts:check lint:ts lint:css test:unit"
@@ -36,6 +38,7 @@
     "@typescript-eslint/parser": "^5.3.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-polyfill": "^6.26.0",
+    "concurrently": "^6.4.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
