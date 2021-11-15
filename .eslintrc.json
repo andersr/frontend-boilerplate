@@ -50,6 +50,7 @@
       }
     ],
     "jest/consistent-test-it": "error",
+    "jest/no-disabled-tests": "error",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
