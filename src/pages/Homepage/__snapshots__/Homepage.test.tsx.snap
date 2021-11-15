@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage renders correctly 1`] = `
+<div
+  data-testid="homepage"
+>
+  <h1>
+    Homepage
+  </h1>
+  <div>
+    <a
+      href="/about"
+      onClick={[Function]}
+    >
+      About Us
+    </a>
+  </div>
+  <div
+    className="sc-bdvvtL hHbXyP"
+    data-testid="currentCount"
+  >
+    Count: 
+    0
+     
+    <button
+      onClick={[Function]}
+    >
+      Add
+    </button>
+  </div>
+  <img
+    alt="Sample Image"
+    src="test-file-stub"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Set FOO
+  </button>
+</div>
+`;
