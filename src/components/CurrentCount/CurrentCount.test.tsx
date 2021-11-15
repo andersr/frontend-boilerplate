@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react'
 import React from 'react'
 
 import {
-  CurrentCount,
+  CURRENT_COUNT_DEFAULT,
   CURRENT_COUNT_TEST_ID,
-  CURRENT_COUNT_DEFAULT
+  CurrentCount
 } from './CurrentCount'
 
 describe('CurrentCount', () => {

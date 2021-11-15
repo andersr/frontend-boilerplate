@@ -20,6 +20,7 @@ plugins:
   - react
   - react-hooks
   - jest
+  - simple-import-sort
   - prettier
   - '@typescript-eslint'
 rules: {
@@ -31,5 +32,6 @@ rules: {
   '@typescript-eslint/no-use-before-define': ['error'],
   'react-hooks/rules-of-hooks': 'error',
   'react-hooks/exhaustive-deps': 'error',
-  'prettier/prettier': 'error'
+  'prettier/prettier': 'error',
+  'simple-import-sort/imports': 'error',
 }

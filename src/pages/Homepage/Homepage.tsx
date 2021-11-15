@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CurrentCount } from '../../components'
+
 import { SamplePngFile } from '../../assets/images'
+import { CurrentCount } from '../../components'
 export const HOMEPAGE_TEST_ID = 'homepage'
 
 export function Homepage() {
