@@ -23,6 +23,7 @@ plugins:
   - prettier
   - '@typescript-eslint'
 rules: {
+  complexity: ['error', 15],
   'no-console': ['error', { allow: ['warn', 'error']}],
   'jest/consistent-test-it': 'error',
   'no-use-before-define': 'off',
