@@ -1,5 +1,5 @@
 describe('Jest', () => {
-    it('works', () => {
-        expect.anything()
-    })
+  it('works', () => {
+    expect.anything()
+  })
 })

@@ -9,8 +9,10 @@ const Container = styled.div`
 `
 
 export const CurrentCount: React.FC = () => {
-    const [count, setCount] = useState(CURRENT_COUNT_DEFAULT)
-    return (
-        <Container data-testid={CURRENT_COUNT_TEST_ID}>Count: {count} <button onClick={() => setCount(count + 1)}>Add</button></Container>
-    )
+  const [count, setCount] = useState(CURRENT_COUNT_DEFAULT)
+  return (
+    <Container data-testid={CURRENT_COUNT_TEST_ID}>
+      Count: {count} <button onClick={() => setCount(count + 1)}>Add</button>
+    </Container>
+  )
 }

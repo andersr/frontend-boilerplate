@@ -6,6 +6,7 @@ extends:
   - 'plugin:react/recommended'
   - 'plugin:jest/recommended'
   - standard
+  - 'prettier-standard'
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaFeatures:
@@ -19,7 +20,7 @@ plugins:
   - react
   - react-hooks
   - jest
-  - 'prettier-standard'
+  - prettier
   - '@typescript-eslint'
 rules: {
   'no-console': ['error', { allow: ['warn', 'error']}],
@@ -28,8 +29,5 @@ rules: {
   '@typescript-eslint/no-use-before-define': ['error'],
   'react-hooks/rules-of-hooks': 'error',
   'react-hooks/exhaustive-deps': 'error',
-  'prettier/prettier': 'error',
-  # note you must disable the base rule as it can report incorrect errors
-  'indent': 'off',
-  '@typescript-eslint/indent': ['error']
+  'prettier/prettier': 'error'
 }
