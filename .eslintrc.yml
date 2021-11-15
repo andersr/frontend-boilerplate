@@ -24,6 +24,7 @@ plugins:
   - '@typescript-eslint'
 rules: {
   complexity: ['error', 15],
+  'max-lines':  ['error', 300],
   'no-console': ['error', { allow: ['warn', 'error']}],
   'jest/consistent-test-it': 'error',
   'no-use-before-define': 'off',
