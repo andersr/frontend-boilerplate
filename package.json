@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf ./dist && webpack --config ./webpack/webpack.prod.ts",
     "build:serve": "serve dist",
-    "dev": "concurrently \"yarn test:unit:watch\" \"yarn dev:server\"",
+    "dev": "concurrently --names \"JEST,WEBPACK\" \"yarn test:unit:watch\" \"yarn dev:server\"",
     "dev:server": "yarn && webpack serve --config './webpack/webpack.dev.ts'",
     "lint:css": "stylelint \"./src/**/*.css\"",
     "lint:styled": "stylelint \"./src/**/*.tsx\" --config ./.stylelintrc_styled",
