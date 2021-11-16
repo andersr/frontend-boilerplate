@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Homepage renders correctly 1`] = `
+.c0 {
+  height: 20px;
+  background-color: green;
+}
+
 <div
   data-testid="homepage"
 >
@@ -16,7 +21,7 @@ exports[`Homepage renders correctly 1`] = `
     </a>
   </div>
   <div
-    className="sc-bdvvtL hHbXyP"
+    className="c0"
     data-testid="currentCount"
   >
     Count: 
