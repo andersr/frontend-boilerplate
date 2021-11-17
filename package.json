@@ -40,7 +40,6 @@
     "@types/webpack-dev-server": "^4.3.1",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
-    "awesome-typescript-loader": "^5.2.1",
     "babel-polyfill": "^6.26.0",
     "concurrently": "^6.4.0",
     "css-loader": "^6.5.1",
