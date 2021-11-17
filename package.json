@@ -12,6 +12,7 @@
     "lint:styled": "stylelint \"./src/**/*.tsx\" --config ./.stylelintrc_styled",
     "lint:ts": "eslint \"./src/**/*.{js,ts,tsx}\"",
     "test:unit": "jest",
+    "test:unit:update": "jest --updateSnapshot",
     "test:unit:watch": "jest --watch",
     "ts:check": "tsc --noEmit",
     "prepare": "husky install",
