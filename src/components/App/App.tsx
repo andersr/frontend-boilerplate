@@ -6,6 +6,8 @@ import styled from 'styled-components'
 
 export const APP_CONTAINER_TEST_ID = 'AppContainer'
 
+const FOO = 'bar'
+
 const Container = styled.div.attrs(() => ({
   'data-testid': APP_CONTAINER_TEST_ID
 }))`
