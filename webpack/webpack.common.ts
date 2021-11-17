@@ -1,6 +1,6 @@
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-const FILE_LOADER = 'file-loader';
+const FILE_LOADER = 'file-loader'
 
 export const common: unknown = {
   entry: ['babel-polyfill', './src/main.tsx'],
@@ -19,7 +19,7 @@ export const common: unknown = {
         loader: FILE_LOADER,
         options: {
           name: 'fonts/[name].[ext]'
-        },
+        }
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -30,10 +30,8 @@ export const common: unknown = {
       },
       {
         test: /\.tsx?/,
-        loader: 'awesome-typescript-loader',
-        options: {
-          errorsAsWarnings: true, // TODO: only for dev?
-        }
+        use: 'ts-loader',
+        exclude: /node_modules/
       }
     ]
   },
