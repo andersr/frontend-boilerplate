@@ -37,10 +37,5 @@ exports[`Homepage renders correctly 1`] = `
     alt="Sample Image"
     src="test-file-stub"
   />
-  <button
-    onClick={[Function]}
-  >
-    Set FOO
-  </button>
 </div>
 `;
