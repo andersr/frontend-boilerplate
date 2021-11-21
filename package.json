@@ -51,6 +51,7 @@
     "babel-polyfill": "^6.26.0",
     "concurrently": "^6.4.0",
     "css-loader": "^6.5.1",
+    "cypress": "^9.0.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-prettier-standard": "^4.0.1",
