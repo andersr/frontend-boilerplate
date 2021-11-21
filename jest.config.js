@@ -10,5 +10,5 @@ module.exports = {
   preset: 'ts-jest',
   setupFilesAfterEnv: ['./jest.setup.ts'],
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['e2e']
+  testPathIgnorePatterns: ['cypress']
 }
