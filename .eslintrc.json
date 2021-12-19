@@ -6,7 +6,6 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "plugin:jest/recommended",
     "standard",
     "prettier-standard"
   ],
@@ -49,8 +48,6 @@
         ]
       }
     ],
-    "jest/consistent-test-it": "error",
-    "jest/no-disabled-tests": "warn",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"

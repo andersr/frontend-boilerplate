@@ -1,0 +1,14 @@
+{
+    "extends": [
+      "../.eslintrc.json",
+      "plugin:jest/recommended"
+    ],
+    "plugins": [
+        "jest"
+      ],
+    "rules": {
+        "jest/consistent-test-it": "error",
+        "jest/no-disabled-tests": "warn"
+      }
+  }
+  
