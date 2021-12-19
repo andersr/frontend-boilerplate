@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && webpack --config ./webpack/webpack.prod.ts",
-    "build:serve": "serve dist",
+    "build:serve": "serve dist -p 5000",
     "e2e:start": "yarn build && yarn build:serve",
     "check:all": "npm-run-all check:ts lint:ts:push lint:css test:unit",
     "check:ts": "tsc --noEmit",
@@ -21,8 +21,8 @@
     "test:unit:watch": "jest --watch",
     "prepare": "husky install",
     "build-storybook": "build-storybook",
-    "e2e:run": "CYPRESS_baseUrl=http://localhost:3000 cypress run",
-    "e2e:test": "start-server-and-test e2e:start http://localhost:3000 e2e:run"
+    "e2e:run": "cypress run",
+    "e2e:test": "start-server-and-test e2e:start http://localhost:5000 e2e:run"
   },
   "dependencies": {
     "history": "5",
