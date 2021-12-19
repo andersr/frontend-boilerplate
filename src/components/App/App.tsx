@@ -21,7 +21,7 @@ const MainContent = styled.div`
 export function App() {
   return (
     <Container>
-      <div>APP HEADER</div>
+      <div data-testid="AppHeader">APP HEADER</div>
       <MainContent>
         <Outlet />
       </MainContent>

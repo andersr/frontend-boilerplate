@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rm -rf ./dist && webpack --config ./webpack/webpack.prod.ts",
     "build:serve": "serve dist",
+    "e2e:start": "yarn build && yarn build:serve",
     "check:all": "npm-run-all check:ts lint:ts:push lint:css test:unit",
     "check:ts": "tsc --noEmit",
     "dev": "yarn && concurrently --names \"test,web\" \"yarn test:unit:watch\" \"yarn dev:server\"",
@@ -19,7 +20,9 @@
     "test:unit:update": "jest --updateSnapshot",
     "test:unit:watch": "jest --watch",
     "prepare": "husky install",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "e2e:run": "CYPRESS_baseUrl=http://localhost:3000 cypress run",
+    "e2e:test": "start-server-and-test e2e:start http://localhost:3000 e2e:run"
   },
   "dependencies": {
     "history": "5",
@@ -56,6 +59,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-prettier-standard": "^4.0.1",
     "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.2.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -77,6 +81,7 @@
     "prettier-eslint": "^13.0.0",
     "react-dev-utils": "^11.0.4",
     "react-test-renderer": "^17.0.2",
+    "start-server-and-test": "^1.14.0",
     "style-loader": "^3.3.1",
     "stylelint": "^14.1.0",
     "stylelint-config-recommended": "^6.0.0",
